@@ -1,0 +1,152 @@
+{
+  "city": "Antioch",
+  "state": "CA",
+  "zip_code": "94509",
+  "fips_county": "06013",
+  "report_generated": "2026-10-04T17:03:56.141497",
+  "SHEET_1_DEMOGRAPHICS": {
+    "census_data": {
+      "total_population": "115016",
+      "median_household_income": "90709",
+      "data_year": "2022 ACS 5-Year",
+      "geography": "Antioch city, California",
+      "geography_level": "city/place",
+      "census_place_code": "02252",
+      "data_source": "U.S. Census Bureau ACS S0101/S1901"
+    },
+    "employment_data": {
+      "total_nonfarm_payroll": "1,131,400",
+      "period": "August 2026",
+      "yoy_job_growth_pct": "1.06%",
+      "yoy_jobs_added": "11,900"
+    }
+  },
+  "SHEET_2_SUPPLY_DEMAND": {
+    "rentcast_market_metrics": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "rentcast_active_listings": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "redfin_market_data": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Not required for standardized portfolio metrics"
+    }
+  },
+  "SHEET_3_FINANCIALS": {
+    "zillow_home_value_index": {
+      "zhvi_current": "$591,983",
+      "zhvi_12mo_ago": "$600,612",
+      "zhvi_yoy_change_pct": "-1.44%",
+      "zhvi_3yr_change_pct": "-4.00%",
+      "as_of_date": "2026-08-31",
+      "data_source": "Zillow ZHVI"
+    },
+    "zillow_rent_index": {
+      "zori_current": "$2,851",
+      "zori_yoy_change_pct": "1.76%",
+      "as_of_date": "2026-08-31",
+      "data_source": "Zillow ZORI"
+    },
+    "fred_macro_indicators": {
+      "mortgage_rate_30yr": {
+        "current_value": "7.28",
+        "date": "2026-10-01",
+        "prior_value": "7.03"
+      },
+      "cpi_inflation": {
+        "current_value": "334.131",
+        "date": "2026-08-01",
+        "prior_value": "332.813"
+      },
+      "housing_starts": {
+        "current_value": "1275",
+        "date": "2026-08-01",
+        "prior_value": "1309"
+      },
+      "case_shiller_index": {
+        "current_value": "333.235",
+        "date": "2026-07-01",
+        "prior_value": "332.294"
+      },
+      "data_source": "FRED (Federal Reserve)"
+    },
+    "rentcast_pricing": {
+      "avg_rent": null,
+      "days_on_market": null,
+      "median_sale_price": null,
+      "price_to_rent_ratio": null
+    }
+  },
+  "SHEET_4_GEOGRAPHIC_STRUCTURAL": {
+    "census_housing_composition": {
+      "total_housing_units": "37,408",
+      "housing_type_breakdown": {
+        "single_family_detached": "28,815 (77.0%)",
+        "single_family_attached_townhouse": "1,987 (5.3%)",
+        "small_multifamily_2_to_4_units": "1,684 (4.5%)",
+        "large_multifamily_5_plus_units": "4,492 (12.0%)",
+        "mobile_homes": "430 (1.1%)"
+      },
+      "tenure_breakdown": {
+        "owner_occupied": "22,401 (61.5%)",
+        "renter_occupied": "14,010 (38.5%)"
+      },
+      "sfr_vs_multifamily_ratio": "82.3% SFR vs 12.0% Multifamily (5+)",
+      "data_year": "2022 ACS 5-Year",
+      "geography": "Antioch city, California",
+      "geography_level": "city/place",
+      "census_place_code": "02252",
+      "data_source": "U.S. Census Bureau ACS B25024/B25003"
+    },
+    "hud_fair_market_rents": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "building_permits_pipeline": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Metric mapping requires validation"
+    },
+    "attom_property_composition": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "attom_community_metrics": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    }
+  },
+  "county": "Contra Costa",
+  "cache_type": "portfolio_market_cache_v2",
+  "portfolio_metrics": {
+    "home_value": 591983.0,
+    "home_value_yoy_pct": -1.44,
+    "home_value_3yr_pct": -4.0,
+    "zillow_observed_rent_index": 2851.0,
+    "rent_yoy_pct": 1.76,
+    "city_population": 115016.0,
+    "city_median_household_income": 90709.0,
+    "metro_job_growth_pct": 1.06,
+    "metro_jobs_added": 11900.0,
+    "sfr_detached_share_pct": 77.0,
+    "multifamily_5plus_share_pct": 12.0,
+    "owner_occupied_share_pct": 61.5,
+    "renter_occupied_share_pct": 38.5,
+    "mortgage_rate_30yr_pct": 7.28,
+    "home_value_as_of": "2026-08-31",
+    "rent_as_of": "2026-08-31",
+    "mortgage_rate_as_of": "2026-10-01"
+  },
+  "source_health": {
+    "census": "ok",
+    "bls": "ok",
+    "zillow_zhvi": "ok",
+    "zillow_zori": "ok",
+    "fred": "ok",
+    "census_housing": "ok"
+  },
+  "geography_note": "Zillow and Census demographic/housing metrics are city-level. BLS employment metrics are regional/metro-level. FRED indicators provide broader macroeconomic context.",
+  "data_quality": "Portfolio cache uses Census, BLS, Zillow Research and FRED as core sources. RentCast, ATTOM, HUD, Redfin and building permits are not required for the public cache."
+}

@@ -1,0 +1,152 @@
+{
+  "city": "Walnut Creek",
+  "state": "CA",
+  "zip_code": "94596",
+  "fips_county": "06013",
+  "report_generated": "2026-10-04T16:16:57.893884",
+  "SHEET_1_DEMOGRAPHICS": {
+    "census_data": {
+      "total_population": "69809",
+      "median_household_income": "129971",
+      "data_year": "2022 ACS 5-Year",
+      "geography": "Walnut Creek city, California",
+      "geography_level": "city/place",
+      "census_place_code": "83346",
+      "data_source": "U.S. Census Bureau ACS S0101/S1901"
+    },
+    "employment_data": {
+      "total_nonfarm_payroll": "1,131,400",
+      "period": "August 2026",
+      "yoy_job_growth_pct": "1.06%",
+      "yoy_jobs_added": "11,900"
+    }
+  },
+  "SHEET_2_SUPPLY_DEMAND": {
+    "rentcast_market_metrics": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "rentcast_active_listings": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "redfin_market_data": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Not required for standardized portfolio metrics"
+    }
+  },
+  "SHEET_3_FINANCIALS": {
+    "zillow_home_value_index": {
+      "zhvi_current": "$992,645",
+      "zhvi_12mo_ago": "$982,175",
+      "zhvi_yoy_change_pct": "1.07%",
+      "zhvi_3yr_change_pct": "0.20%",
+      "as_of_date": "2026-08-31",
+      "data_source": "Zillow ZHVI"
+    },
+    "zillow_rent_index": {
+      "zori_current": "$2,959",
+      "zori_yoy_change_pct": "5.45%",
+      "as_of_date": "2026-08-31",
+      "data_source": "Zillow ZORI"
+    },
+    "fred_macro_indicators": {
+      "mortgage_rate_30yr": {
+        "current_value": "7.28",
+        "date": "2026-10-01",
+        "prior_value": "7.03"
+      },
+      "cpi_inflation": {
+        "current_value": "334.131",
+        "date": "2026-08-01",
+        "prior_value": "332.813"
+      },
+      "housing_starts": {
+        "current_value": "1275",
+        "date": "2026-08-01",
+        "prior_value": "1309"
+      },
+      "case_shiller_index": {
+        "current_value": "333.235",
+        "date": "2026-07-01",
+        "prior_value": "332.294"
+      },
+      "data_source": "FRED (Federal Reserve)"
+    },
+    "rentcast_pricing": {
+      "avg_rent": null,
+      "days_on_market": null,
+      "median_sale_price": null,
+      "price_to_rent_ratio": null
+    }
+  },
+  "SHEET_4_GEOGRAPHIC_STRUCTURAL": {
+    "census_housing_composition": {
+      "total_housing_units": "33,507",
+      "housing_type_breakdown": {
+        "single_family_detached": "12,571 (37.5%)",
+        "single_family_attached_townhouse": "4,947 (14.8%)",
+        "small_multifamily_2_to_4_units": "3,519 (10.5%)",
+        "large_multifamily_5_plus_units": "12,363 (36.9%)",
+        "mobile_homes": "107 (0.3%)"
+      },
+      "tenure_breakdown": {
+        "owner_occupied": "20,763 (64.5%)",
+        "renter_occupied": "11,442 (35.5%)"
+      },
+      "sfr_vs_multifamily_ratio": "52.3% SFR vs 36.9% Multifamily (5+)",
+      "data_year": "2022 ACS 5-Year",
+      "geography": "Walnut Creek city, California",
+      "geography_level": "city/place",
+      "census_place_code": "83346",
+      "data_source": "U.S. Census Bureau ACS B25024/B25003"
+    },
+    "hud_fair_market_rents": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "building_permits_pipeline": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Metric mapping requires validation"
+    },
+    "attom_property_composition": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "attom_community_metrics": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    }
+  },
+  "county": "Contra Costa",
+  "cache_type": "portfolio_market_cache_v2",
+  "portfolio_metrics": {
+    "home_value": 992645.0,
+    "home_value_yoy_pct": 1.07,
+    "home_value_3yr_pct": 0.2,
+    "rent_index": 2959.0,
+    "rent_yoy_pct": 5.45,
+    "county_population": 69809.0,
+    "county_median_household_income": 129971.0,
+    "metro_job_growth_pct": 1.06,
+    "metro_jobs_added": 11900.0,
+    "sfr_detached_share_pct": 37.5,
+    "multifamily_5plus_share_pct": 36.9,
+    "owner_occupied_share_pct": 64.5,
+    "renter_occupied_share_pct": 35.5,
+    "mortgage_rate_30yr_pct": 7.28,
+    "home_value_as_of": "2026-08-31",
+    "rent_as_of": "2026-08-31",
+    "mortgage_rate_as_of": "2026-10-01"
+  },
+  "source_health": {
+    "census": "ok",
+    "bls": "ok",
+    "zillow_zhvi": "ok",
+    "zillow_zori": "ok",
+    "fred": "ok",
+    "census_housing": "ok"
+  },
+  "geography_note": "Zillow metrics are city-level. Census demographic/housing metrics are county-level; BLS employment is metro-level; FRED metrics are national macro indicators.",
+  "data_quality": "Portfolio cache uses Census, BLS, Zillow Research and FRED as core sources. RentCast, ATTOM, HUD, Redfin and building permits are not required for the public cache."
+}

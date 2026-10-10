@@ -1,0 +1,157 @@
+{
+  "city": "Campbell",
+  "state": "CA",
+  "zip_code": "95008",
+  "fips_county": "06085",
+  "report_generated": "2026-10-04T17:07:03.000036",
+  "SHEET_1_DEMOGRAPHICS": {
+    "census_data": {
+      "total_population": "43464",
+      "median_household_income": "141794",
+      "data_year": "2022 ACS 5-Year",
+      "geography": "Campbell city, California",
+      "geography_level": "city/place",
+      "census_place_code": "10345",
+      "data_source": "U.S. Census Bureau ACS S0101/S1901"
+    },
+    "employment_data": {
+      "error": "BLS request failed",
+      "raw": {
+        "status": "REQUEST_NOT_PROCESSED",
+        "responseTime": 0,
+        "message": [
+          "Request could not be serviced, as the daily threshold for total number of requests allocated to the user with registration key  has been reached."
+        ],
+        "Results": {}
+      }
+    }
+  },
+  "SHEET_2_SUPPLY_DEMAND": {
+    "rentcast_market_metrics": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "rentcast_active_listings": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "redfin_market_data": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Not required for standardized portfolio metrics"
+    }
+  },
+  "SHEET_3_FINANCIALS": {
+    "zillow_home_value_index": {
+      "zhvi_current": "$1,843,263",
+      "zhvi_12mo_ago": "$1,791,159",
+      "zhvi_yoy_change_pct": "2.91%",
+      "zhvi_3yr_change_pct": "18.28%",
+      "as_of_date": "2026-08-31",
+      "data_source": "Zillow ZHVI"
+    },
+    "zillow_rent_index": {
+      "zori_current": "$3,471",
+      "zori_yoy_change_pct": "7.92%",
+      "as_of_date": "2026-08-31",
+      "data_source": "Zillow ZORI"
+    },
+    "fred_macro_indicators": {
+      "mortgage_rate_30yr": {
+        "current_value": "7.28",
+        "date": "2026-10-01",
+        "prior_value": "7.03"
+      },
+      "cpi_inflation": {
+        "current_value": "334.131",
+        "date": "2026-08-01",
+        "prior_value": "332.813"
+      },
+      "housing_starts": {
+        "current_value": "1275",
+        "date": "2026-08-01",
+        "prior_value": "1309"
+      },
+      "case_shiller_index": {
+        "current_value": "333.235",
+        "date": "2026-07-01",
+        "prior_value": "332.294"
+      },
+      "data_source": "FRED (Federal Reserve)"
+    },
+    "rentcast_pricing": {
+      "avg_rent": null,
+      "days_on_market": null,
+      "median_sale_price": null,
+      "price_to_rent_ratio": null
+    }
+  },
+  "SHEET_4_GEOGRAPHIC_STRUCTURAL": {
+    "census_housing_composition": {
+      "total_housing_units": "18,341",
+      "housing_type_breakdown": {
+        "single_family_detached": "8,223 (44.8%)",
+        "single_family_attached_townhouse": "2,395 (13.1%)",
+        "small_multifamily_2_to_4_units": "2,379 (13.0%)",
+        "large_multifamily_5_plus_units": "5,177 (28.2%)",
+        "mobile_homes": "167 (0.9%)"
+      },
+      "tenure_breakdown": {
+        "owner_occupied": "8,803 (51.6%)",
+        "renter_occupied": "8,261 (48.4%)"
+      },
+      "sfr_vs_multifamily_ratio": "57.9% SFR vs 28.2% Multifamily (5+)",
+      "data_year": "2022 ACS 5-Year",
+      "geography": "Campbell city, California",
+      "geography_level": "city/place",
+      "census_place_code": "10345",
+      "data_source": "U.S. Census Bureau ACS B25024/B25003"
+    },
+    "hud_fair_market_rents": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "building_permits_pipeline": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Metric mapping requires validation"
+    },
+    "attom_property_composition": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    },
+    "attom_community_metrics": {
+      "status": "disabled_for_portfolio_cache",
+      "reason": "Optional authenticated source"
+    }
+  },
+  "county": "Santa Clara",
+  "cache_type": "portfolio_market_cache_v2",
+  "portfolio_metrics": {
+    "home_value": 1843263.0,
+    "home_value_yoy_pct": 2.91,
+    "home_value_3yr_pct": 18.28,
+    "zillow_observed_rent_index": 3471.0,
+    "rent_yoy_pct": 7.92,
+    "city_population": 43464.0,
+    "city_median_household_income": 141794.0,
+    "metro_job_growth_pct": null,
+    "metro_jobs_added": null,
+    "sfr_detached_share_pct": 44.8,
+    "multifamily_5plus_share_pct": 28.2,
+    "owner_occupied_share_pct": 51.6,
+    "renter_occupied_share_pct": 48.4,
+    "mortgage_rate_30yr_pct": 7.28,
+    "home_value_as_of": "2026-08-31",
+    "rent_as_of": "2026-08-31",
+    "mortgage_rate_as_of": "2026-10-01"
+  },
+  "source_health": {
+    "census": "ok",
+    "bls": "error",
+    "zillow_zhvi": "ok",
+    "zillow_zori": "ok",
+    "fred": "ok",
+    "census_housing": "ok"
+  },
+  "geography_note": "Zillow and Census demographic/housing metrics are city-level. BLS employment metrics are regional/metro-level. FRED indicators provide broader macroeconomic context.",
+  "data_quality": "Portfolio cache uses Census, BLS, Zillow Research and FRED as core sources. RentCast, ATTOM, HUD, Redfin and building permits are not required for the public cache."
+}
