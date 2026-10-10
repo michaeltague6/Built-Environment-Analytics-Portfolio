@@ -1419,7 +1419,7 @@ with tab5:
     # Palette used only by Tab 5 components, preserving the other tabs.
     MARKET_ACCENTS = ["#55CFC2", "#79A8F8", "#D5A86B", "#B49AE7"]
 
-    MARKET_DATA_DIR = Path(__file__).resolve().parent / "market_data"
+    MARKET_DATA_DIR = os.path.dirname(os.path.abspath(__file__))
 
     @st.cache_data(show_spinner=False)
     def load_market_cache(data_dir_str):
