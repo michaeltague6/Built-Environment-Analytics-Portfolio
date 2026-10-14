@@ -889,6 +889,7 @@ The residential strategy is oriented around a “vertical neighborhood” aggreg
 
 Key focus areas include mass transit connectivity, expansive daylit concourses, intuitive wayfinding, and integrated micro-climate zones that reduce overall terminal energy loads. The terminal serves not only as a hub for aviation travel, but also as a larger transportation, civic, and commercial system. The terminal includes a stop for the BART train system, as well as a ferry port, connecting users fluidly with locations across the Bay Area. A dedicated conference center and machine learning lab inspire innovation and commerce without the need to leave the terminal. Baggage claim, ticketing, and security are tucked below the main level, allowing for reduced stress-levels and a seamless design on the main conourse. AI smart security allows passengers to move quickly through security checks, with built-in bag sensors that can conduct thorough detection without the need for CT scanners. Users not intended to utilize the terminal's transportation sources are encouraged to enjoy the collection of retail and dining experiences.""",
             "metrics": [
+                "Performance Goals:",
                 "Terminal Capacity: 18,000 passengers/hour",
                 "Structural Clear Span: 120 meters timber-steel hybrid grid",
                 "Daylight Autonomy: 84% in main departure hall",
@@ -901,7 +902,7 @@ Key focus areas include mass transit connectivity, expansive daylit concourses, 
             },
             "full_width_plan": {
                 "title": "Master Terminal Floor Plan & Passenger Flow Matrix",
-                "file": "floor plans.png",
+                "file": "Floor 1 Plans.png",
                 "desc": "Integrated master terminal level detailing ticketing; modernized AI-assisted security; employee and customer amenities prioritizing wellness and productivity; and multi-modal transit interfaces across the entire terminal footprint."
             },
             "drawings_left": [
